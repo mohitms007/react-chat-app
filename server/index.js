@@ -55,11 +55,11 @@ io.on('connection', function (socket) {
 
  
 
-  socket.on('send-message', async (data) => {
+  socket.on('send_message', async (data) => {
   
   
     try{ 
-
+ // broadcast to all user other then sender
       socket.broadcast.emit('message', data);
 
     }
