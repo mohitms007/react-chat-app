@@ -44,14 +44,12 @@ io.on('connection', function (socket) {
    
  
   socket.on('typing', async (data) => {
-    data.u_id = socket.user.uId ; 
-    socket.broadcast.to(u_s[data.curr_f_id]).emit('typing', data);
+    socket.broadcast.emit('typing', data);
  
   });
 
   socket.on('not-typing', async (data) => {
-    data.u_id = socket.user.uId ; 
-    socket.broadcast.to(u_s[data.curr_f_id]).emit('not-typing', data);
+    socket.broadcast.emit('not-typing', data);
 
   });
 
