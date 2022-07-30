@@ -1,0 +1,25 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "description": "my socket request handler",
+  "main": "socket-file.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "lint": "eslint . ",
+    "lint:fix": "eslint . --fix "
+  },
+  "author": "wonder woman",
+  "license": "ISC",
+  "dependencies": { 
+    "cors": "^2.8.5", 
+    "express": "^4.15.2",  
+    "socket.io": "^1.7.3",
+    "socket.io-client": "^2.3.1",
+    "socket.io-cookie-parser": "^1.0.0"
+     
+  },
+  "devDependencies": { 
+    "nodemon": "^2.0.19"
+  }
+}
